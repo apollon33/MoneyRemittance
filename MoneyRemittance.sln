@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyRemittance.web", "MoneyRemittance.web\MoneyRemittance.web.csproj", "{235BDE05-C636-4DAD-A13C-427B74681575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyRemittance.web.Tests", "MoneyRemittance.web.Tests\MoneyRemittance.web.Tests.csproj", "{D5B23A5B-1E92-45B8-BDFF-C843D1621EF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyRemittance.model", "MoneyRemittance.model\MoneyRemittance.model.csproj", "{883B878A-AE1F-42B3-A982-FD122BF81E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyRemittance.data", "MoneyRemittance.data\MoneyRemittance.data.csproj", "{4C9EA932-BBC1-426F-8917-171224F11B7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{235BDE05-C636-4DAD-A13C-427B74681575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235BDE05-C636-4DAD-A13C-427B74681575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235BDE05-C636-4DAD-A13C-427B74681575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235BDE05-C636-4DAD-A13C-427B74681575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B23A5B-1E92-45B8-BDFF-C843D1621EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B23A5B-1E92-45B8-BDFF-C843D1621EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B23A5B-1E92-45B8-BDFF-C843D1621EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B23A5B-1E92-45B8-BDFF-C843D1621EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883B878A-AE1F-42B3-A982-FD122BF81E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883B878A-AE1F-42B3-A982-FD122BF81E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883B878A-AE1F-42B3-A982-FD122BF81E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883B878A-AE1F-42B3-A982-FD122BF81E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C9EA932-BBC1-426F-8917-171224F11B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9EA932-BBC1-426F-8917-171224F11B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9EA932-BBC1-426F-8917-171224F11B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9EA932-BBC1-426F-8917-171224F11B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

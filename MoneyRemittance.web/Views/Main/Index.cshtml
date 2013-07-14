@@ -1,0 +1,53 @@
+﻿@model MoneyRemittance.model.Customer
+
+@{
+    ViewBag.Title = "Money Remittance";
+}
+
+@section scripts 
+{
+    <script>
+        jQuery(document).ready(function($){
+            $('#banner-slide').bjqs({
+                animtype: 'slide',
+                animduration: 450,
+                animspeed: 4000,
+                automatic: true,
+                height: 420,
+                width: 720,
+                responsive: true,
+                randomstart: true,
+                usecaptions: true,
+                nexttext: 'Next',
+                prevtext: 'Prev',
+                showcontrols: true,
+                showmarkers: false
+            });
+        });
+    </script>
+}
+<div id="site-title-header">
+    <p>@ViewBag.message</p>
+</div>
+
+<div id="banner-slide">
+    <ul class="bjqs">
+        <li>
+            <img src="~/Content/images/Main01.jpg" title="Banner 1 Title Here..." />
+            <p>Banner 1 Title Here...</p>
+        </li>
+        <li>
+            <img src="~/Content/images/Main02.jpg" title="Banner 2 Title Here..." />
+            <p>Banner 2 Title Here...</p>
+        </li>
+        <li>
+            <img src="~/Content/images/banner03.jpg" title="Banner 3 Title Here..." />
+            <p>Banner 3 Title Here...</p>
+        </li>    
+    </ul>
+</div>   
+
+@section CustomerRegister
+{
+    @Html.Action("_Create", "Customer")
+}

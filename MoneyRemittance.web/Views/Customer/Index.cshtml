@@ -1,0 +1,75 @@
+﻿@model IEnumerable<MoneyRemittance.model.Customer>
+
+@{
+    ViewBag.Title = "Registered Customers";
+}
+
+<h2>List of Registered Customers</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustLName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustFName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustCountry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustGender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IAgree)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustLName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustFName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustCountry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustGender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IAgree)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CustomerId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CustomerId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerId })
+        </td>
+    </tr>
+}
+
+</table>

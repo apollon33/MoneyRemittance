@@ -1,0 +1,525 @@
+﻿html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #FFA500;
+    border-top: solid 0px #000;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    /*text-decoration: underline;*/
+}
+
+    a:link, a:visited,
+    a:active, a:hover {
+        color: #333;
+    }
+
+    a:hover {
+        background-color: #c7d1d6;
+        text-decoration: none;
+    }
+
+header, footer, nav, section, aside {
+    display: block;
+}
+
+mark {
+    background-color: #a6dbed;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+    h2.header {
+        color: #ff8603;
+        margin-left: 30px;
+    }
+
+h3 {
+    font-size: 1.3em;
+}
+
+    h3.header {
+        color: #ff8603;
+        margin-left: 30px;
+        padding-bottom: 10px;
+    }
+
+h4 {
+    font-size: 1em;
+}
+
+h5, h6 {
+    font-size: 0.5em;
+}
+
+    h5 a:link, h5 a:visited, h5 a:active {
+        padding: 0;
+        text-decoration: none;
+    }
+
+/* Main layout style rules
+----------------------------------------------------------*/
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.header-wrapper {
+    margin: 0 auto;
+    height: 80px;
+    position: static;
+}
+
+.footer-wrapper {
+    /*margin: 0 inherit;*/
+    height: 80px;
+    padding-top: 50px;
+}
+
+#content {
+    background-color: #efeeef;
+    font-size: .9em;
+    height: 455px;
+    position: relative;
+    /*clear: both;*/
+}
+
+section#content-left-section {
+    background-color: #a6dbed;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 467px;
+    width: 400px;
+}
+
+section#content-right-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 455px;
+    width: 540px;
+}
+
+    section#content-right-section div {
+        padding-left: 25px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+.container-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 455px;
+    width: 540px;
+    background-color: lightyellow;
+    z-index: 1;
+}
+
+header .content-wrapper {
+    padding-top: 38px;
+}
+
+footer {
+    clear: both;
+    position: relative; 
+    font-size: .8em;
+    height: 173px;
+}
+
+    footer .content-wrapper {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+#banner-slide {
+    width: auto;
+    /*margin-top: 5px;*/
+    /*margin-bottom: 10px;*/
+    font-size: 16px;
+    color: white;
+}
+
+.div-wrapper {
+    margin: 0 0;
+    width: 724px;
+    position: relative; 
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+/*End-----------------------------------------------------*/
+
+/* Site box and content style rules
+----------------------------------------------------------*/
+.div-yellow-box {
+    background-color: lightyellow;
+    border: 1px solid #c2bfbf;
+    margin-top: 10px;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 115px;
+    left: 30px;
+}
+
+span.subcontent {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 15px;
+    font-size: 1.1em;
+    word-wrap: break-word;
+}
+
+#div-image-box {
+    position: absolute;
+    border: 0;
+    right: 90px;
+    top: 125px;
+}
+
+    #div-image-box img {
+        border: 1px solid #adabab;
+    }
+/*End-----------------------------------------------------*/
+
+/* Site title style rules
+----------------------------------------------------------*/
+.site-title {
+    color: #232323;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 2.3em;
+    margin: 0;
+}
+
+    .site-title a, .site-title a:hover, .site-title a:active {
+        background: none;
+        color: #c8c8c8;
+        outline: none;
+        text-decoration: none;
+    }
+
+#site-title-header {
+    width: 705px;
+    height: 32px;
+    margin-bottom: 1px;
+    padding-left: 15px;
+    padding-bottom: 1px;
+    background: #d3c6c6;
+}
+
+    #site-title-header p {
+        padding-top: 6px;
+    }
+/*End-----------------------------------------------------*/
+
+/* Header menu style rules
+----------------------------------------------------------*/
+ul#header-menu {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 0 5px;
+    padding: 0;
+    text-align: right;
+}
+
+    ul#header-menu li {
+        display: inline;
+        list-style: none;
+        padding-left: 15px;
+    }
+
+        ul#header-menu li a {
+            background: none;
+            color: #fee;
+            text-decoration: none;
+        }
+
+            ul#header-menu li a:hover {
+                color: #333;
+                text-decoration: none;
+            }
+/*End-----------------------------------------------------*/
+
+/* Footer menu style rules
+----------------------------------------------------------*/
+ul.footer-menu {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0 0 5px;
+    padding: 0;
+    text-align: right;
+}
+
+    ul.footer-menu li {
+        display: inline;
+        list-style: none;
+        padding-left: 12px;
+    }
+
+        ul.footer-menu li a {
+            background: none;
+            color: #fee;
+            text-decoration: none;
+        }
+
+            ul.footer-menu li a:hover {
+                color: #333;
+                text-decoration: none;
+            }
+
+span#creator {
+    font-size: 0.75em;
+    margin-left: 15px;
+    padding-top: 25px;
+    text-decoration: none; 
+}
+/*End-----------------------------------------------------*/
+
+/* Style rules for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 2em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.main-editor-field {
+    margin: 1.5em 0 0 0;
+}
+
+#input-join {
+    width: 413px;
+    height: 36px;
+    border: 0px;
+    color: #fee;
+    background-color: #ef7d1c;
+    border: 1px solid #f68409;
+    box-shadow: 1px 1px 2px rgb(241, 161, 17);
+}
+
+.input-submit {
+    width: 110px;
+    height: 35px;
+    border: 0px;
+    color: #fee;
+    background-color: #ef7d1c;
+    border: 1px solid #f68409;
+    box-shadow: 1px 1px 2px rgb(241, 161, 17);
+}
+
+/*End-----------------------------------------------------*/
+
+/* Style rules for main customer registration
+----------------------------------------------------------*/
+.main-editor-for {
+    /*width: 181px;*/
+    height: 25px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #b4b4b4;
+    white-space: nowrap;
+}
+
+#div-create-container {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.div-custname-wrapper {
+    padding-top: 35px;
+    padding-right: 10px;
+    /*margin: 0px auto;*/
+    float: left;
+}
+
+    .div-custname-wrapper .main-editor-for {
+        width: 173px;
+    }
+
+.div-email-country-wrapper {
+    padding-top: 14px;
+    /*margin: 0 auto;*/
+    float: left;
+}
+
+    .div-email-country-wrapper .main-editor-for {
+        width: 398px;
+    }
+
+#div-gender-wrapper {
+    padding-top: 14px;
+    /*margin: 0 auto;*/
+    width: 392px;
+    float: left;
+}
+
+    #div-gender-wrapper label {
+        font-size: .85em;
+        padding-left: 3px;
+        padding-right: 8px;
+    }
+
+.div-password-wrapper {
+    padding-top: 14px;
+    padding-right: 10px;
+    /*margin: 0px auto;*/
+    float: left;
+}
+
+    .div-password-wrapper .main-editor-for {
+        width: 173px;
+    }
+
+#div-iagree-wrapper {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    width: 392px;
+    float: left;
+}
+
+    #div-iagree-wrapper label {
+        font-size: .85em;
+        padding-left: 3px;
+        padding-right: 8px;
+    }
+
+#div-join-button {
+    padding-top: 0px;
+    float: left;
+    width: 395px;
+}
+
+/*End-----------------------------------------------------*/
+
+/* Style rules for contact inquiry
+----------------------------------------------------------*/
+.div-contact-wrapper {
+    padding-left: 35px;
+    padding-right: 0px;
+    padding-top: 10px;
+    width: 95%;
+    float: left;
+}
+
+    .div-contact-wrapper .main-editor-for {
+        width: 270px;
+    }
+
+#div-header-wrapper {
+    float: right;
+    margin-right: 80px;
+}
+
+#issue-detail {
+    height: 65px;
+    width: 270px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #b4b4b4;
+    white-space: pre-wrap;
+}
+
+.div-send-button-container {
+    margin-top: 20px;
+    padding-left: 35px;
+    margin-right: 5px;
+    float: left;
+    width: 115px;
+}
+
+.div-cancel-button-container {
+    float: left;
+    padding-top: 20px;
+}
+
+/*End-----------------------------------------------------*/
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+    font-size: .75em;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+/*End-----------------------------------------------------*/

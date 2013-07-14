@@ -1,0 +1,92 @@
+﻿@model MoneyRemittance.web.Models.CreateCustomerViewModel
+
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div id="div-create-container"> 
+        <div class="div-custname-wrapper">
+            <span>
+                @Html.TextBoxFor(model => model.FirstName, new { @class = "main-editor-for", @placeholder = @Html.DisplayNameFor(model => model.FirstName), @id = "first_name" })
+            </span>
+            <br />
+            <span>@Html.ValidationMessageFor(model => model.FirstName)</span>
+        </div>
+
+        <div class="div-custname-wrapper">
+            <span>
+                @Html.TextBoxFor(model => model.LastName, new { @class = "main-editor-for", @placeholder = @Html.DisplayNameFor(model => model.LastName), @id = "last_name" })
+            </span>
+            <br />
+            <span>@Html.ValidationMessageFor(model => model.LastName)</span>
+        </div>
+
+        <div class="div-email-country-wrapper">
+            <span>
+                @Html.TextBoxFor(model => model.EmailAdd, new { @class = "main-editor-for", @placeholder = @Html.DisplayNameFor(model => model.EmailAdd), @id = "emailadd" })
+            </span>
+            <br />
+            <span>@Html.ValidationMessageFor(model => model.EmailAdd)</span>
+        </div>
+ 
+        <div class="div-email-country-wrapper">
+            <span>
+                @Html.TextBoxFor(model => model.ConfirmEmailAdd, new { @class = "main-editor-for", @placeholder = @Html.DisplayNameFor(model => model.ConfirmEmailAdd), @id = "confirm_email" })
+            </span>
+            <br />
+            <span>@Html.ValidationMessageFor(model => model.ConfirmEmailAdd)</span>
+        </div>
+
+        @*<div id="div-gender-wrapper">
+            <span>
+                @Html.RadioButtonFor(model => model.Gender, true, new { @id = "male", @checked = "checked" })<label>Male</label>
+                @Html.RadioButtonFor(model => model.Gender, false, new { @id = "female" })<label>Female</label>
+                @Html.RadioButtonFor(model => model.Gender, false, new { @id = "other" })<label>Other</label>
+            </span>
+        </div>
+
+        <div class="div-email-country-wrapper">
+            <span>
+                @Html.TextBoxFor(model => model.Country, new { @class = "main-editor-for", @placeholder = @Html.DisplayNameFor(model => model.Country), @id = "country" })
+            </span>
+            <br />
+            <span>@Html.ValidationMessageFor(model => model.Country)</span>
+        </div>*@
+
+        <div class="div-password-wrapper">
+            <span>
+                @Html.PasswordFor(model => model.Password, new { @class = "main-editor-for", @placeholder = @Html.DisplayNameFor(model => model.Password), @id = "password" })
+            </span>
+            <br />
+            <span>@Html.ValidationMessageFor(model => model.Password)</span>
+        </div>
+
+        <div class="div-password-wrapper">
+            <span>
+                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "main-editor-for", @placeholder = @Html.DisplayNameFor(model => model.ConfirmPassword), @id = "confirm_password" })
+            </span>
+            <br />
+            <span>@Html.ValidationMessageFor(model => model.ConfirmPassword)</span>   
+        </div>
+
+        <div id="div-iagree-wrapper">
+            <span>
+                @Html.CheckBoxFor(model => model.Agree, new { @id = "iagree" })<label>I agree to money remittance terms</label>
+            </span>
+            <span>@Html.ValidationMessageFor(model => model.Agree)</span>    
+        </div>
+
+        <div id="div-join-button">
+            <input type="submit" value="Join Now, It's Free" id="input-join" />
+        </div>
+    </div>
+}
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@

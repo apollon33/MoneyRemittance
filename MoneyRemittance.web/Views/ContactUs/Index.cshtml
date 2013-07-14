@@ -1,0 +1,29 @@
+﻿@model MoneyRemittance.model.Inquiry
+
+@{
+    ViewBag.Title = "Money Remittance";
+}
+
+<div class="div-wrapper">
+    <h2 class="header">@ViewBag.Message1</h2>
+</div>
+
+<div class="div-wrapper">
+    <span class="subcontent">
+        Have an issue that isn't addressed in our support documentation? Require further information about  our offering?   
+    </span><br />
+    <span class="subcontent">
+        Please use the form or contact information to tell us about it.  
+        Or send an email to <a href="mailto:company@yahoo.com?subject=Online Money Remittance Inquiry">company@yahoo.com</a>
+    </span>
+</div>
+<div class="div-wrapper">
+    <h3 class="header">New Zealand Office</h3>
+    <span class="subcontent">Address 1</span><br />
+    <span class="subcontent">Address 2</span><br /><br />
+    <span class="subcontent">Telephone Numbers:</span>
+</div>
+
+<div class="container-right">
+    @Html.Action("_Create", "ContactUs")
+</div>

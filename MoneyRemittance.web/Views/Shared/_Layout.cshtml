@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Online @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("logo here", "Index", "Main")</p>
+                </div>
+                <div class="float-right">                   
+                    <nav>
+                        <ul id="header-menu">
+                            <li>@Html.ActionLink("Send Money", "Index", "SendMoney")</li>
+                            <li>@Html.ActionLink("Create Account", "Index", "Customer")</li>
+                            <li>@Html.ActionLink("Pricing", "Prices", "Main")</li>
+                            <li>@Html.ActionLink("Support", "Support", "Main")</li>
+                            <li>@Html.ActionLink("About", "About", "Main")</li>
+                            <li>@Html.ActionLink("How to Start ?", "HowTo", "Helper")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+        @RenderBody()       
+        <section id="content-right-section">
+            @RenderSection("CustomerRegister", required: false)
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <nav>
+                        <ul class="footer-menu">
+                            <li>@Html.ActionLink("Contact Us", "Index", "ContactUs")</li>
+                            <li>@Html.ActionLink("Follow Us", "Follow", "ContactUs")</li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <nav>
+                            <ul class="footer-menu"">
+                                <li>twitter</li>
+                                <li>facebook</li>
+                                <li>linkedin</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="float-right">
+                    <nav>
+                        <ul class="footer-menu">
+                            <li>@Html.ActionLink("Security", "Index", "Disclaimer")</li>
+                            <li>@Html.ActionLink("Privacy", "Privacy", "Disclaimer")</li>
+                            <li>@Html.ActionLink("User Agreement", "Agreement", "Disclaimer")</li>
+                            <li>@Html.ActionLink("Site Map", "Sitemap", "Disclaimer")</li>
+                        </ul>
+                    </nav>
+                    <span id="creator">&copy; @DateTime.Now.Year Powered by: <a href="http://www.transfigsoft.com/" target="_blank">Transfiguration Software</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bjqs")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
