@@ -14,5 +14,7 @@ namespace MoneyRemittance.model
         public virtual string FullName { get; set; }
         public virtual string TopicSelected { get; set; }
         public virtual string MessageBody { get; set; }
+
+        //public virtual IEnumerable<Topics> ? { get; set; }
     }
 }

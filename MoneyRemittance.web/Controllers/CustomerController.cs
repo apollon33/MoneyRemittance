@@ -51,7 +51,7 @@ namespace MoneyRemittance.web.Controllers
                 customer.CustFName = custViewModel.FirstName;
                 customer.CustLName = custViewModel.LastName;
                 customer.IAgree = custViewModel.Agree;
-                customer.DateRegistered = DateTime.Now;
+                //customer.DateRegistered = DateTime.Now;
 
                 if (custViewModel.EmailAdd == custViewModel.ConfirmEmailAdd)
                 {

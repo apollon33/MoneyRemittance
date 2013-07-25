@@ -39,7 +39,7 @@ namespace MoneyRemittance.model
 
         public virtual bool IAgree { get; set; }
 
-        public virtual DateTime DateRegistered { get; set; }
+        //public DateTime DateRegistered { get; set; }  
 
         public virtual ICollection<Recipient> CustomerRecipients { get; set; }
         public virtual ICollection<CustomerAccount> CustomerAccounts { get; set; }

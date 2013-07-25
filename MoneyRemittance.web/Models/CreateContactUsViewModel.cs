@@ -9,6 +9,11 @@ namespace MoneyRemittance.web.Models
 {
     public class CreateContactUsViewModel
     {
+        [ScaffoldColumn(false)]
+        public int ConfigDetailNo { get; set; }
+        [ScaffoldColumn(false)]
+        public string ConfigDetailName { get; set; }
+
         [Display(Name = "First Name")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "First Name is a required field.")]
         public string FName { get; set; }
@@ -28,5 +33,8 @@ namespace MoneyRemittance.web.Models
 
         [Display(Name = "Provide details of issue here")]
         public string Details { get; set; }
+
+        //Contains the list of topics
+        //public SelectTopic Inquiries { get; set; }
     }
 }
